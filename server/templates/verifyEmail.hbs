@@ -1,0 +1,82 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Welcome to Email Verification</title>
+    <link
+      href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap'
+      rel='stylesheet'
+    />
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+      href='https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css'
+      rel='stylesheet'
+    />
+  </head>
+  <body style="margin: 0; font-family: 'Poppins'; background-color: #f5f7f9">
+    <div
+      style='
+        background-color: #f3f2f0;
+        text-align: center;
+        padding: 15px;
+        font-weight: bold;
+        font-size: 14px;
+        border-bottom: 1px solid #eee;
+      '
+    >
+    </div>
+
+    <div
+      style='
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 40px 20px;
+        text-align: center;
+      '
+    >
+      <div style='text-align: left; padding: 0 20px 20px 20px'>
+        {{GetLogo}}
+      </div>
+      <div
+        style="
+          text-align: left;
+          padding: 0 20px;
+          font-weight: 500;
+          font-size: 16px;
+          font-family: 'Poppins', sans-serif;
+        "
+      >
+      Account 
+      <br>
+      <div style="font-weight: 700;">{{email}}</div>
+      <br>
+      Username
+      <br>
+      <div style="font-weight: 700;">{{username}}</div>
+      </div>
+      <br>
+      <div
+        style="
+          text-align: left;
+          padding: 0 20px;
+          font-weight: 500;
+          font-size: 16px;
+          font-family: 'Poppins', sans-serif;
+        "
+      >
+        Thank you for registering with us. Please click the link below to verify your email address and complete your account setup.
+      </div>
+      <br />
+        <div style="font-size: 16px; font-weight: 700; text-align: left;padding: 0 20px;font-family: 'Poppins', sans-serif;">
+     <a href="http://localhost:3000/v1/api/email/verify?token={{token}}" target="_blank"
+   style="display: inline-block; text-align: center; padding: 16px; border: 1px solid #2A74FF; 
+          border-radius: 40px; font-weight: 700; background-color: #2A74FF; width: 250px; 
+          text-decoration: none; color: whitesmoke; font-size: 16px;">
+  Verify Email
+</a>
+      
+      </div>
+    </div>
+  </body>
+</html>
